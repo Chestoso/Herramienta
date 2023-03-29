@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+<!--TITULO Y ICONO  DE LA PESTAÑA DE WEB-->
+	<meta charset="utf-8">
+	<title> EL MUNDO DEL ARTE</title>
+
+<!--ENLACES DE LOS ESTILOS DEL SITIO DE WEB-->    
+  <link rel="stylesheet" type="text/css" href="ESTILO/Estilo Generales.css">
+  <link rel="stylesheet" href="ESTILO/font de redes.css">
+	<link rel="stylesheet" href="Paint/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="IMAGEN DE LA PESTAÑA/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--ENLACES DE JAVA SCRIPT PARA EL FUNCIONAMIENTO DEL SITIO DE WEB--> 
+  <script src="Paint/script.js" defer></script>
+	<style>
+		.img-center{
+			text-align: center;
+		}
+	</style>
+</head>
+
+<!--FONDO DEL SITIO WEB-->
+<body background="FONDOS/fondo1.jpg">
+</body>
+
+<!--BARRA DEL LAS REDES SOCIALES DEL SITIO WEB-->
+<body>
+  <div class="social-bar">
+    <a href="https://web.facebook.com/profile.php?id=100068387993222" class="icon icon-facebook" target="_blank"></a>
+    <a href="" class="icon icon-twitter" target="_blank"></a>
+    <a href="https://www.youtube.com/@chestosoCR./youtube.com/" class="icon icon-youtube" target="_blank"></a>
+    <a href="" class="icon icon-instagram" target="_blank"></a>
+  </div>
+</body>
+
+<!--MUSICA DE FONDO SITIO WEB-->
+<body onclick = "PlayAudio()">
+	<audio id="musica1"loop>
+		<source src="Musica/rex orange county lofi instrumental extended version (128 kbps).mp3" type="audio/mpeg" >
+	</audio>
+	<script>
+		function PlayAudio(){
+			document.getElementById("musica1").play();
+		}
+	</script>
+</body>
+
+<!--ESTRUCTURA DEL SITIO WEB-->
+<body>
+	<div class="resolucion">
+	<header>
+		
+		<!--ENCABEZADO DEL SITIO WEB-->
+		<div class="fondo">
+			<img src="IMAGEN DE CONTENIDO/fondo2.jpg" width="1000" alt="100">
+		</div>
+
+		<!--MENU DEL SITIO WEB-->	
+		<nav>
+			<ul>
+				<li> <a href="#"></a> </li>
+				<li> <a href="https://chestoso.github.io/Pagina/Pagina.html"> INICIO</a> </li>
+				<li> <a href="https://chestoso.github.io/Conceptos/Conceptos.html"> CONCEPTOS</a> </li>
+				<li> <a href="https://chestoso.github.io/Categoria/Categoria.html"> CATEGORIA</a> </li>
+				<li> <a href="https://chestoso.github.io/Obras/Obras.html"> OBRAS</a> </li>
+				<li> <a href="https://chestoso.github.io/Dibujos/Dibujos.html">- 💕 💕 - </a> </li>
+				<li> <a href="https://chestoso.github.io/Herramienta/Herramienta.html">HERRAMIENTA </a></li>
+				<li> <a href="https://chestoso.github.io/Formulario-del-Curso-de-Arte/Formulario%20del%20Curso%20de%20Arte.html"> REGISTRO</a> </li>
+				<li> <a href="https://chestoso.github.io/Contacto/Contacto.html"> CONTACTO </a> </li>
+			</ul>
+		</nav>
+	</header>
+</body>
+<body>
+	<footer>
+		<!--TITULO Y IMAGENES DEL ENCABEZADO DEL CONTENIDO DEL SITIO WEB-->
+		<footer>
+					<table>
+					<tr>
+						<td> 
+							<div class="img-center">
+								<img src="IMAGEN DE CONTENIDO/kisspng-face-woman-drawing-clip-art-5b070616229c78.5114865115271869661418.png" title="Retrato:La Gioconda (1503), de Leonardo da Vinci." width="150" height="200" /> 
+							</div>
+						</td>
+						<td> 
+							<hr>
+							<br>
+							<p class="titulo"><h4> HERRAMIENTA DE PAINT - DEMO </h4> 	</p>
+							<hr>
+							<br>
+							<p class="titulo"> Libera tu creatividad con esta herramienta de dibujo , en la cual podras hacer un gran obra de arte
+							</p>
+							<br>
+							<hr>
+						</td>
+						<td> 
+							<div class="img-center">
+								<img src="IMAGEN DE CONTENIDO/kisspng-face-woman-drawing-clip-art-5b070616229c78.5114865115271869661418.png" title="Retrato:La Gioconda (1503), de Leonardo da Vinci." width="150" height="200" /> 
+							</div>
+						</td>
+					</tr>
+				</table>
+			</footer>
+
+			<!--OPCIONES DE LA HERRAMIENTA DEL SITIO WEB-->
+			<div class="container">
+      <section class="tools-board">
+        <div class="row">
+        	<br>
+          <label class="title"> Formas</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="icons/rectangle.svg" alt="">
+              <span>Rectangulo</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="icons/circle.svg" alt="">
+              <span>Circulo</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="icons/triangle.svg" alt="">
+              <span>Triangulo</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Color de Relleno</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Opciones</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="icons/brush.svg" alt="">
+              <span>Pincel</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="icons/eraser.svg" alt="">
+              <span>Borrador</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5">
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colores</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Nuevo Lienzo</button>
+          <button class="save-img">Guardar Imagen</button>
+        </div>
+      </section>
+
+      <!--LIENZO O PIZARRA DE LA HERRAMIENTA DEL SITIO WEB-->
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+	</section>
+	</footer>	
+
+	<!--PIE DE PAGINA  DEL SITIO WEB-->	
+	<footer class="FONDO"> 
+		<p>	Creado por Jhon Jairo - Chestoso God - Copyright © 2023 - © Todos los derechos reservados </p>
+	</footer>
+</div>
+</body>
+</html>
